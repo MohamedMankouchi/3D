@@ -4,7 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const IphoneModel = () => {
-  const iphone = useGLTF("../public/apple_iphone_15_pro_max_black/scene.gltf");
+  const iphone = useGLTF("/apple_iphone_15_pro_max_black/scene.gltf");
   return <primitive object={iphone.scene} scale={20} />;
 };
 export const Iphone = () => {

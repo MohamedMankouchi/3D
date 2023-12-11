@@ -4,7 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const MacbookModel = () => {
-  const mac = useGLTF("../public/macbook_pro/scene.gltf");
+  const mac = useGLTF("macbook_pro/scene.gltf");
 
   return <primitive object={mac.scene} scale={11} />;
 };
