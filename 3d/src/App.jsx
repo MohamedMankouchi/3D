@@ -38,7 +38,7 @@ function App() {
               <h1 style={{ fontSize: "30px" }}>{el.title}</h1>
             </div>
             <div className="cards-button">
-              <Link to={`http://localhost:5173/${el.link}`}>
+              <Link to={`https://threed-applestore.onrender.com/${el.link}`}>
                 <button>View</button>
               </Link>
             </div>
