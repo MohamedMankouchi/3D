@@ -4,20 +4,18 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const IphoneModel = () => {
-  const iphone = useGLTF(
-    "./../public/apple_iphone_15_pro_max_black/scene.gltf"
-  );
+  const iphone = useGLTF("../public/apple_iphone_15_pro_max_black/scene.gltf");
   return <primitive object={iphone.scene} scale={20} />;
 };
 export const Iphone = () => {
   return (
     <>
       <div className="back-button">
-        <Link to={'/'}>
+        <Link to={"/"}>
           <button>Back to store</button>
         </Link>
       </div>
-      
+
       <div className="canvas" style={{ height: "100%" }}>
         <Canvas
           frameloop="demand"

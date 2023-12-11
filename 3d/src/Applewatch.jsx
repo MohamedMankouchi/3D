@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const ApplewatchModel = () => {
-  const watch = useGLTF("./../public/apple_watch_ultra_2/scene.gltf");
+  const watch = useGLTF("../public/apple_watch_ultra_2/scene.gltf");
 
   return <primitive object={watch.scene} scale={25} />;
 };
